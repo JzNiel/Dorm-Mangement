@@ -1,0 +1,178 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.reg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+
+.reg h3{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+  font-size: 30px;
+}
+
+.reg h2{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+  font-size: 30px;
+}
+
+.reg form{
+padding: 0 40px;
+box-sizing: border-box;
+}
+
+form .text1{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.text1 input{
+  width: 100%;
+  padding: 0 5px;
+  height: 20px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.text1 label{
+  position: absolute;
+  top: 50%;
+  left:  5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+
+}s
+.text1 span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+
+.text1 input:focus ~ label,
+.text1 input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+.text1 input:focus ~ span::before,
+.text1 input:valid ~ span::before{
+  width: 100%;
+}
+
+.register{
+    margin-top: 20px;
+    margin-left: 115px;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: #e6e7e8;
+    
+}
+
+.reg p{
+  text-align: center;
+  padding: 0 0 20px 0;
+  font-size: 14px;
+
+}
+
+
+/*logbook-css*/
+
+.regs{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+
+.regs h3{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+  font-size: 30px;
+  color: black;
+}
+
+.regs form{
+padding: 0 40px;
+box-sizing: border-box;
+}
+
+
+/*table*/
+
+
+* {
+    /* Change your font family */
+    font-family: sans-serif;
+}
+
+.filer {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.filer thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.filer th,
+.filer td {
+    padding: 12px 15px;
+}
+
+.filer tbody tr {
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+.filer tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.filer tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.filer tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+    text-align: center;
+}

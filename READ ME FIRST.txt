@@ -1,0 +1,7 @@
+Student Interface
+Email: mark@gmail.com
+Password: mark
+
+Admin Interface
+Username: Daniel
+Password: daniel
